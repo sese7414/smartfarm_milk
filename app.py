@@ -151,7 +151,7 @@ with col2:
             with image_placeholder.container():
                 _, center, _ = st.columns([1, 2, 1])
                 with center:
-                    st.image(img_url, caption=f"{status} 상태", width=320) # 
+                    st.image(img_url, caption=f"{status} 상태", width=320, use_container_width = True) # 
                     # st.markdown(
                     #     f"""
                     #     <div style="text-align: center;">
@@ -163,4 +163,5 @@ with col2:
                     #     unsafe_allow_html=True
                     # )
         else:
+
             image_placeholder.write("결과 확인 버튼을 눌러 이미지를 확인하세요.")
